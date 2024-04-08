@@ -7,8 +7,6 @@
     background-color: $primaryColor;
 
     ul {
-        // this mixin will give display flex, justify-content: center and width 70% properties to the container
-
         display: flex;
         justify-content: center;
         gap: 50px;

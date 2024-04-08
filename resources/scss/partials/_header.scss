@@ -6,7 +6,8 @@
 
 .jumbotron {
     background-image: url("../img/jumbotron.jpg");
-    height: 370px;
+    background-size: cover;
+    height: 400px;
 
     .current-series {
         position: absolute;
@@ -40,6 +41,7 @@
         text-transform: uppercase;
         font-weight: bold;
         font-family: "Barlow Condensed", sans-serif;
+        margin-bottom: 0;
 
         li {
             padding-top: 50px;

@@ -161,4 +161,27 @@ return [
         ],
     ],
 
+    'socials' => [
+        [
+            'name' => 'facebook',
+            'icon' => '/img/footer-facebook.png'
+        ],
+        [
+            'name' => 'twitter',
+            'icon' => '/img/footer-twitter.png'
+        ],
+        [
+            'name' => 'youtube',
+            'icon' => '/img/footer-youtube.png'
+        ],
+        [
+            'name' => 'pinterest',
+            'icon' => '/img/footer-pinterest.png'
+        ],
+        [
+            'name' => 'periscope',
+            'icon' => '/img/footer-periscope.png'
+        ],
+    ]
+
 ];

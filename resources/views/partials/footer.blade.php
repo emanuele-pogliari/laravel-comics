@@ -14,11 +14,15 @@
                 </div>
                 @endforeach
             </div>
+            
             <div class="logo-footer">
                 <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
             </div>
-
+          
         </div>
+        <div class="copyright-container">
+        <p>All Site Content TM and © 2020 DC Entertainment, unless otherwise <span>noted here</span>.All right reserved.<br><span>Cookies Settings</span></p>
+    </div>
     </div>
 
 
@@ -28,7 +32,9 @@
             <div class="follow">
                 <h4>Follow us</h4>
                 <div class="social">
-                    <img v-for="social of socials" :src="social.icon" :alt="social.name">
+                    @foreach($socials as $social)
+                    <img src="{{ Vite::asset('resources' . $social['icon'])}}" alt="{{$social['name']}}">
+                    @endforeach
                 </div>
             </div>
         </div>

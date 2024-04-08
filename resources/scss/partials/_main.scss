@@ -22,6 +22,22 @@
     background-color: #303030;
     color: white;
 
+    .current-series {
+        position: absolute;
+
+        padding: 5px 30px;
+
+        left: 270px;
+
+        transform: translateY(-50%);
+
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: $primaryColor;
+    }
+
     .content {
         display: flex;
         flex-wrap: wrap;
@@ -34,22 +50,6 @@
         padding-top: 55px;
 
         font-size: 28px;
-
-        .current-series {
-            position: absolute;
-
-            padding: 5px 30px;
-
-            left: 270px;
-
-            transform: translateY(-50%);
-
-            font-family: "Barlow Condensed", sans-serif;
-            font-size: 30px;
-            font-weight: 700;
-            text-transform: uppercase;
-            background-color: $primaryColor;
-        }
 
         .load-btn {
             display: block;
