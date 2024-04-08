@@ -14,6 +14,7 @@
     </head>
     <body>
         @include('partials/header')
+        @yield('main')
         @include('partials/footer')
     </body>
 </html>
