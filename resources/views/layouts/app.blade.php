@@ -15,6 +15,7 @@
     <body>
         @include('partials/header')
         @yield('main')
+        @include('partials/ecommerce')
         @include('partials/footer')
     </body>
 </html>

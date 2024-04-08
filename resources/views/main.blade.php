@@ -10,6 +10,7 @@
                 </div>
         @endforeach   
     </div>
+    <div class="current-series">Current Series</div>
         <button class="load-btn">Load More</button>                 
     </div>
 </main>

@@ -15,6 +15,6 @@
         </ul>
     </nav>
 <div class="jumbotron">
-    <div class="current-series">Current Series</div>
+    
 </div>
 </div>

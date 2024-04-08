@@ -3,45 +3,16 @@
         <div class="footer-container">
 
             <div class="links">
+                @foreach($footerLinks as $footerLink)
                 <div class="links-list">
-                    <h3>link1</h3>
+                    <h3>{{$footerLink['title']}}</h3>
                     <ul>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                    </ul>
-                    <h3>link2</h3>
-                    <ul>
-                        <li>item1</li>
-                        <li>item1</li>
-                    </ul>
-                    <h3>link3</h3>
-                    <ul>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                    </ul>
-                    <h3>link4</h3>
-                    <ul>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
+                        @foreach($footerLink['links'] as $links)
+                        <li>{{$links}}</li>
+                        @endforeach
                     </ul>
                 </div>
+                @endforeach
             </div>
             <div class="logo-footer">
                 <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
