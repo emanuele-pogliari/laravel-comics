@@ -21,3 +21,9 @@ Route::get('/', function () {
 
     return view('main', compact('comics', 'links', 'footerLinks', 'socials'));
 })->name('main');
+
+Route::get('comic-detail', function () {
+    $footerLinks = config("db.linkList");
+    $socials = config("db.socials");
+    return view('comic-details', compact('footerLinks', 'socials'));
+})->name('comic-detail');

@@ -1,5 +1,5 @@
 @extends('layouts/app')
-@section('main')
+@section('content')
 <main>
     <div class="content-container">
         <div class="current-series">Current Series</div>
@@ -14,6 +14,16 @@
         <button class="load-btn">Load More</button>                 
         </div>
     
+    </div>
+    <div class="ecommerce-container">
+        <ul>
+            @foreach($links as $link)
+            <li>
+                <img src="{{ Vite::asset('resources' . $link['image'])}}">
+                <p>{{ $link['name'] }}</p>
+            </li>
+            @endforeach
+        </ul>
     </div>
     
 </main>

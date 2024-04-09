@@ -18,8 +18,7 @@
     </head>
     <body>
         @include('partials/header')
-        @yield('main')
-        @include('partials/ecommerce')
+        @yield('content')
         @include('partials/footer')
     </body>
 </html>
